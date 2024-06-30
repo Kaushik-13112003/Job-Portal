@@ -1,0 +1,166 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: rgb(24, 17, 19);
+}
+
+.linkHover:hover {
+  color: rgb(205, 48, 48);
+}
+
+/* home */
+.home {
+  /* background-color: antiquewhite; */
+  width: 100vw;
+  /* height: 100vh; */
+}
+.displayArea {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* logout */
+#logout {
+  position: absolute;
+  right: 17px;
+  cursor: pointer;
+  color: white;
+  top: 14px;
+  transition: all 0.8s ease-in-out;
+}
+
+#edit {
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+  color: blue;
+}
+#edit:hover {
+  color: rgb(18, 32, 5);
+  transform: scale(2, 2);
+}
+#logout:hover {
+  color: red;
+}
+
+/* icons & footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.iconColor:hover {
+  color: rgb(39, 9, 9);
+  transition: all 0.7s ease-in-out;
+}
+
+/* exploreAndApply */
+.exploreAndApply {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.exploreAndApply button {
+  width: 130px;
+}
+
+/* singleJob */
+.singleJob {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* editAndDelte */
+.editAndDelte {
+  transition: all 0.8s ease-in-out;
+}
+.editAndDelte:hover {
+  transform: scale(2, 2);
+}
+
+/* contactInfo */
+.contactInfo {
+  cursor: pointer;
+}
+
+.contactInfo:hover {
+  color: red;
+}
+
+/* searchIcon */
+#searchIcon {
+  width: 40px;
+  animation: search infinite ease-in-out 0.7s infinite;
+}
+
+.lightDark {
+  cursor: pointer;
+}
+
+/* removePhotoIcon */
+.removePhotoIcon {
+  color: white;
+}
+/* removePhoto */
+.removePhoto:hover {
+  color: red;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-wrap: wrap;
+  }
+  footer .footerText {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rlbtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .exploreAndApply div {
+    margin-top: 20px;
+    width: 100vw;
+  }
+  .exploreAndApply button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .left-part {
+    position: fixed;
+    top: 0;
+    margin-top: 100px;
+    margin-left: 30px;
+    bottom: 0;
+    padding-top: 30px;
+    left: 0;
+    width: 28vw; /* Adjust width as needed */
+    background-color: #fff; /* Optional: Set background color */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  }
+
+  /* .left-part::-webkit-scrollbar {
+    display: none;
+  } */
+
+  .right-part {
+    margin-left: 28vw; /* Width of the left part */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  }
+}
