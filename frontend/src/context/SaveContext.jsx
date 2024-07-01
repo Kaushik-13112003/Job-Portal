@@ -16,7 +16,7 @@ const SaveProvider = ({ children }) => {
       setJobId([...jobId, job_id]);
       localStorage.setItem("savejob", JSON.stringify([...saveJob, job]));
       localStorage.setItem("savejobID", JSON.stringify([...jobId, job_id]));
-      // toast.success("Saved");
+      toast.success("job added to your interest");
     } else {
       let filterJobs = saveJob.filter((j) => {
         return j._id !== job_id;
@@ -28,7 +28,7 @@ const SaveProvider = ({ children }) => {
       setJobId(filterJobsId);
       localStorage.setItem("savejob", JSON.stringify(filterJobs));
       localStorage.setItem("savejobID", JSON.stringify(filterJobsId));
-      // toast.success("Unsaved");
+      toast.success("job removed from your interest");
     }
   };
 
