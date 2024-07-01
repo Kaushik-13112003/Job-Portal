@@ -58,7 +58,7 @@ function DrawerAppBar(props) {
           { label: "Jobs", path: "/jobs" },
           { label: "My Jobs", path: "/my-jobs" },
           {
-            label: `Intrested ${`${saveJob.length}`}`,
+            label: `Interested ${`${saveJob.length}`}`,
             path: "/saved-jobs",
           },
           { label: "Profile", path: "/profile" },
@@ -163,7 +163,7 @@ function DrawerAppBar(props) {
                 component={Link}
                 to={item.path}
               >
-                {item.label === `Intrested ${saveJob.length}` ? (
+                {item.label === `Interested ${saveJob.length}` ? (
                   <span className="text-warning">{item.label}</span>
                 ) : (
                   item.label
